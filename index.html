@@ -1,42 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="wrapper">
+      <!-- Title Content Left -->
+      <div class="title_content">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, ut understanding how developers think is
+          invaluable.
+        </p>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <!-- Form Content Right -->
+      <div class="form_content">
+        <a href="#" class="btn-free-t"
+          ><span>Try it free 7 days</span> then $20/mo. thereafter</a
+        >
 
-  Learn to code by watching others
+        <!-- Form -->
+        <form name="contactForm" id="contactForm" onsubmit="" action="#">
+          <div class="col-f">
+            <input
+              id="fname"
+              type="text"
+              placeholder="First Name"
+              class="form-input"
+              name="fname"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error" id="fnameErr"></small>
+          </div>
+          <div class="col-f">
+            <input
+              id="lname"
+              type="text"
+              placeholder="Last Name"
+              class="form-input"
+              name="lname"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error" id="lnameErr"></small>
+          </div>
+          <div class="col-f">
+            <input
+              id="email"
+              type="email"
+              placeholder="Email Address"
+              class="form-input"
+              name="email"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error" id="emailErr"></small>
+          </div>
+          <div class="col-f">
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              class="form-input"
+              name="password"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small class="error" id="passwordErr"></small>
+          </div>
+          <input
+            type="submit"
+            value="Claim your free trial"
+            class="submit-form"
+          />
+          <span class="comm"
+            >By clicking the button, you are agreeing ro our
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+            <a href="#">Terms and Services</a></span
+          >
+        </form>
+        <!-- End Form -->
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
